@@ -1,0 +1,12 @@
+.recipe-list {
+    width: 50%;
+}
+
+.quantity-container {
+    display: inline-block;
+}
+
+.recipe-list__add-recipe-btn {
+    font-size: 32px;
+    font: bold;
+}

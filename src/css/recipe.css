@@ -1,0 +1,36 @@
+.recipe-card {
+    margin: 4rem;
+    padding: 3rem;
+}
+
+.recipe-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.recipe-card__title {
+    margin: 0;
+    font-size: 2.75rem;
+}
+
+.recipe-card__quantity-container {
+    margin: 10px;
+}
+.recipe-card__label {
+    font-size: 28px;
+}
+
+.recipe-card__value {
+    font-size: 18px;
+}
+
+.recipe-card__edit-button {
+    margin: 10px;
+}
+
+.recipe-card__delete-button {
+    margin: 10px;
+}
