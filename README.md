@@ -1,6 +1,14 @@
+# A simple recipe repository
+This is a React.js recipe app that allows the user to add, edit and delete recipes. Local storage is used to persist recipe data upon refresh. This project taught me a lot about how to use State, Context, and event handling in React Js.
+
+[Here is a live preview](https://harmonious-chebakia-07ce75.netlify.app/)
+
+This project is based on a project taught by [WebDevSimplified](https://courses.webdevsimplified.com/learn-react-today)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
