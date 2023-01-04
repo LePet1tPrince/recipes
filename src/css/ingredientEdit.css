@@ -1,0 +1,28 @@
+.ingredient-edit__add-btn {
+    margin: auto;
+    width: 75%;
+}
+
+@keyframes delete-ingredient {
+    0% {opacity: 1;
+
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.delete-ingredient-button {
+    
+
+    font-size: 26px !important;
+    font: bold;
+}
+
+.ingredient-edit__container {
+    animation-name: delete-ingredient;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}

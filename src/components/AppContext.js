@@ -12,6 +12,8 @@ export function useRecipeContext() {
 export default function AppContext({children}) {
   // const [selectedRecipe, setSelectedRecipe] = useState()
   const [selectedRecipeId, setSelectedRecipeId] = useState()
+  
+
 
   const [recipes, setRecipes] = useState(() => {
     const recipeJSON = localStorage.getItem(LOCAL_STORAGE_KEY)
@@ -27,13 +29,11 @@ export default function AppContext({children}) {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(recipes))
     
 
-  }, [recipes])
+  }, [selectedRecipeId, recipes])
 
 
 
 
-
-  // const selectedRecipe = recipes.find(recipe => recipe.id === selectedRecipeId)
 
  
 
@@ -88,6 +88,7 @@ export default function AppContext({children}) {
   const recipeContextValue = {
     recipes,
     selectedRecipeId,
+    setSelectedRecipeId,
     handleRecipeSelect,
     handleRecipeChange,
     handleRecipeAdd,

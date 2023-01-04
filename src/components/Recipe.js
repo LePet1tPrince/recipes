@@ -16,6 +16,8 @@ export default function Recipe(props) {
         ingredients
     } = props;
 
+    
+
   return (
     <div>
 
@@ -45,7 +47,7 @@ export default function Recipe(props) {
                         </div>
                         <div className="recipe-card__quantity-container">
                         <span className="recipe-card__label">Instructions: </span>
-                        <span className="recipe-card__value">{instructions}</span>
+                        <span className="recipe-card__value">{instructions.substring(0,200) + (instructions.length > 200 ? "..." : "")}</span>
                         </div>
                         <IngredientsList ingredients={ingredients}/>
                         {/* <div className="recipe-card__quantity-container">
